@@ -49,7 +49,89 @@ a.heading{
 
 
 }
-.details{
-    display: none;
 
+a.heading span{
+    padding:8px;
+    border: 2px solid floralwhite;
+    background-color: rgba(103,9,9,0.4)
+}
+.details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #272727;
+    color: #FFF;
+    font-size: 15px;
+    opacity: 1;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition:all 500ms ease-in-out;
+    -o-transition:all 500ms ease-in-out;
+    -ms-transition:all 500ms ease-in-out;
+}
+
+.details a.close{
+    display:block;
+    color: #FFF;
+    margin-right: 15px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.details h2{
+    color:#FFF;
+    margin-top: 5px;
+
+}
+
+.details p{
+    margin-top: 0px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+
+}
+.grid:nth-child(3n+1) .details:before{
+
+    position: absolute;
+    content:"hello";
+    top: o;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-right:10px solid #b72121;
+
+}
+.grid:nth-child(3n+2) .details:before{
+
+    position: absolute;
+    content:"hello";
+    top: o;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-right:10px solid #b72121;
+    
+}
+.grid:nth-child(3n+3) .details:before{
+
+    position: absolute;
+    content:"hello";
+    top: o;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-right:10px solid #b72121;
+    transform: rotate(180deg)
 }
