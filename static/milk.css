@@ -63,7 +63,7 @@ a.heading span{
     background-color: #272727;
     color: #FFF;
     font-size: 15px;
-    opacity: 1;
+    opacity: 0;
     z-index: 0;
     top: 0;
     left: 0;
@@ -99,7 +99,7 @@ a.heading span{
 .grid:nth-child(3n+1) .details:before{
 
     position: absolute;
-    content:"hello";
+    content:"";
     top: o;
     left: -10px;
     width: 0;
@@ -112,7 +112,7 @@ a.heading span{
 .grid:nth-child(3n+2) .details:before{
 
     position: absolute;
-    content:"hello";
+    content:"";
     top: o;
     left: -10px;
     width: 0;
@@ -125,7 +125,7 @@ a.heading span{
 .grid:nth-child(3n+3) .details:before{
 
     position: absolute;
-    content:"hello";
+    content:"";
     top: o;
     right: -10px;
     width: 0;
@@ -133,5 +133,22 @@ a.heading span{
     border-top: 10px solid transparent;
     border-bottom:10px solid transparent;
     border-right:10px solid #b72121;
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+}
+
+.grid:nth-child(3n+1) .details:target{
+    opacity: 1;
+    left: 100%;
+    z-index:99;
+}
+
+.grid:nth-child(3n+2) .details:target{
+    opacity: 1;
+    left: 100%;
+    z-index:99;
+}
+.grid:nth-child(3n+3) .details:target{
+    opacity: 1;
+    left: -100%;
+    z-index:99;
 }
